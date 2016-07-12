@@ -24,21 +24,25 @@ This post assumes nothing about what you have already set up on the development 
 Below you can see the project created (SimpleRestfulService) that has been completed. We will run the project by right-mouse clicking in Project Explorer and choosing "Run on Server."
 
 ![](./images/image0001.jpg)
+
 _Figure 1:  Running the Eclipse Project_
 
 To call into the restful service, we will type **http://localhost:8080/rest/azurecourse/query/?course=100.**  What we are doing is passing a query parameter of **100** as the **course** variable. This is the way we pass data into a restful service.
 
 ![](./images/image0004.jpg)
+
 _Figure 2:  Typing the URL to call the Restful Service_
 
 After the call executes, the browser returns the JSON data that relates to **course=100.** The data is in a text file so a text editor will appear. In my case, my default editor is **VIM**. Yours could be **notepad** or something else.
 
 ![](./images/image0007.jpg)
+
 _Figure 3:  A text editor appears to open up the JSON data that results from the restful call_
 
 When the text editor opens up, you will see the JSON data that is returned by the restful service. You can see the **courseTitle** is **Building REST in a Container**.
 
 ![](./images/image0010.jpg)
+
 _Figure 4:  The actual JSON data that is returned in VIM (the editor)_
 
 
@@ -65,11 +69,13 @@ This step is simply creating a new Eclipse project.
 Start by choosing "File/New/Dynamic Web Project." Provide the name you wish to use. I used **SimpleRestfulService**.
 
 ![](./images/image0013.jpg)
+
 _Figure 5:  Creating a new Dynamic Web Project_
 
 You should see **SimpleRestfulService** in the **Project Explorer.**
 
 ![](./images/image0016.jpg)
+
 _Figure 6:  Eclipse Project Explorer_
 
 #### Step 3B - Convert to Maven project
@@ -77,6 +83,7 @@ _Figure 6:  Eclipse Project Explorer_
 You now need to convert the project to a **Maven** project. Do this by right-mouse clicking on the project name and choosing "Configure/Convert to Maven Project."
 
 ![](./images/image0019.jpg)
+
 _Figure 7:  Converting to a Maven project_
 
 #### Step 3C - Edit pom.xml
@@ -93,16 +100,19 @@ In order to simplify development of RESTful Web services and their clients in Ja
 
 
 ![](./images/image0022.jpg)
+
 _Figure 8:  Converting to a Maven Project_
 
 Just click **Finish** below. You need not modify anything here.
 
 ![](./images/image0025.jpg)
+
 _Figure 9:  Wizard used to create pom.xml_
 
  
 
 ![](./images/image0028.jpg)
+
 _Figure 10:  The generated pom.xml file_
 
 This is the code that is generated that you will replace. Replace the contents of **pom.xml** with the code below.
@@ -191,26 +201,31 @@ A deployment descriptor (web.xml) tells the application container how the web ap
 
 
 ![](./images/image0031.jpg)
+
 _Figure 11:  Generating the Deployment Descriptor file_
 
 You will need to add a file called **web.xml** to the following folder. Be sure to right-mouse click on **WB-INF**
 
 ![](./images/image0034.jpg)
+
 _Figure 12:  Targeting the WEB-INF folder_
 
 Select "New/Other.."
 
 ![](./images/image0037.jpg)
+
 _Figure 13:  Adding web.xml to WEB-INF folder_
 
 Select "XML File."
 
 ![](./images/image0040.jpg)
+
 _Figure 14:  Specifying an XML file_
 
 Name the file **web.xml**.
 
 ![](./images/image0043.jpg)
+
 _Figure 15:  Naming the file web.xml_
 
 Paste the following code into **web.xml.** Notice that the startup web page is **Index.html.** Let's add this next to our project.
@@ -241,6 +256,7 @@ Paste the following code into **web.xml.** Notice that the startup web page is *
 _Code: web.xml_
 
 ![](./images/image0046.jpg)
+
 _Figure 16:  The final web.xml file_
 
 
@@ -249,12 +265,15 @@ _Figure 16:  The final web.xml file_
 Even though this is a simple restful service, we will indicate a simple startup page. Right-mouse click on **WebContent** and choose "New/HTML File."
 
 ![](./images/image0049.jpg)
+
 _Figure 17:  Adding an HTML File (Index.html)_
 
 ![](./images/image0052.jpg)
+
 _Figure 18:  Naming the html file (Index.html)_
 
 ![](./images/image0055.jpg)
+
 _Figure 19:  Editing Index.html_
 
 
@@ -270,6 +289,7 @@ It is time to now add the main code for our restful service. The two files are;
 Right-mouse click on the project name and choose "New/Class."
 
 ![](./images/image0058.jpg)
+
 _Figure 20:  Adding AzureCourse.java_
 
 Enter the details for the new source code file.
@@ -280,6 +300,7 @@ Enter the details for the new source code file.
 	- **AzureCourse.java**
 
 ![](./images/image0061.jpg)
+
 _Figure 21:  Name the source code module AzureCourse.java_
 
 Paste in the following code.
@@ -342,11 +363,13 @@ _Code: AzureCourse.java_
 Right-mouse click on the project name and choose "New/Class."
 
 ![](./images/image0058.jpg)
+
 _Figure 22:  Adding AzureCourse.java_
 
 As before, provide package name and file name.
 
 ![](./images/image0064.jpg)
+
 _Figure 23:  Name the source code module SimpleRestfulService.java_
 
 Paste in the following code.
@@ -409,6 +432,7 @@ We are code complete at this point. The project is ready to run. Save and close 
 We need Maven to bring in the dependencies (Jersey, etc) from the pom.xml file. Right-mouse click and choose "Maven/Update Project." You will need to repeat this command again later. Stay tuned for that guidance.
 
 ![](./images/image0067.jpg)
+
 _Figure 24:  Maven/Update Project_
 
 **Checking the Build Path**
@@ -416,16 +440,19 @@ _Figure 24:  Maven/Update Project_
 My install had a problem understanding the import statement in my .java file to remedy this problems. 
 
 ![](./images/image0082.jpg)
+
 _Figure 25:  Verifying the Build Path_
 
 I went to the “Order and Export” and made all the possible selections. Not all of them were excepted, but this appeared to solve some of the issues oddly enough, I had to re-paste the content for pom.xml.  This might’ve been an error that I had done, but re-pasting it seemed to work, along with the changes made to the build path.
 
 ![](./images/image0085.jpg)
+
 _Figure 26:  Specify The "Order And Export"_
 
 Although they did not all stick, I did make the following selections.
 
 ![](./images/image0088.jpg)
+
 _Figure 27:  Selecting All Available Entries_
 
 **Run As/Maven Clean, Run As/Maven Install**
@@ -442,11 +469,13 @@ Eclipse can be a little fickle so I end up running for commands over and over. T
 	-	Run As/Maven Install
 
 ![](./images/image0076.jpg)
+
 _Figure 28:  Selecting Maven Clean_
 
 Ultimately it's the "Run As/Maven Install" that compiles the project so you can run it.
 
 ![](./images/image0079.jpg)
+
 _Figure 29:  Selecting Maven Install_
 
 
@@ -458,8 +487,8 @@ The process to test the application is the exact same as we demonstrated in step
 And of course the response is that some JSON data is returned that can be opened in your favorite editor or saved to disk through the browser.
 
 ![](./images/image0091.jpg)
-_Figure 30:  Issuing a Restful Query with HTTP_
 
+_Figure 30:  Issuing a Restful Query with HTTP_
 
 ## Step 4 of 4 - The creation of a WAR file  that represents the completed application to be containerized 
 
@@ -467,11 +496,13 @@ In this final step four of four, we are ready to produce the war file, which can
 It’s a simple case of right-mouse clicking and selecting “Export/War File."
 
 ![](./images/image0094.jpg)
+
 _Figure 31:  Exporting the WAR file_
 
 Provide a name and destination for the war file
 
 ![](./images/image0097.jpg)
+
 _Figure 32: Providing a name for the WAR file_
 
 ## Conclusion
@@ -479,4 +510,4 @@ _Figure 32: Providing a name for the WAR file_
 The goal for this post has been achieved – we now have a WAR file that we copied to a Docker-Tomcat image and run it as a container. This means that we will be able to run numerous restful services across our Mesosphere cluster.
 We will demonstrate 
 
-How to provision a Mesosphere cluster using the Azure container service, and how to package up and deploy our WAR file across the provisioned clus
+How to provision a Mesosphere cluster using the Azure container service, and how to package up and deploy our WAR file across the provisioned cluster.

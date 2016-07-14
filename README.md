@@ -1,4 +1,4 @@
-# Building a Java-based Restful Service to run in Docker Data Center or Mesosphere
+# Building a Java-based Restful Service to run in DC/OS
 
 ## Building a Restful Service using Jersey in Eclipse (Mars 4.2)
 

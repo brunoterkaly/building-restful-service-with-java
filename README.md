@@ -31,7 +31,9 @@ This post assumes nothing about what you have already set up on the development 
 
 ## Step 1 of 4 - demonstration of the final application that we will build
 
-Below you can see the project created (SimpleRestfulService) that has been completed. We will run the project by right-mouse clicking in Project Explorer and choosing "Run on Server."
+Let's begin by showing you with a completed application that we will build this post. We will be using Eclipse and you can see that in the image below.
+
+The project is called SimpleRestfulService. You are seeing the completed version. We will run the project by right-mouse clicking in Project Explorer and choosing "Run on Server."
 
 ![](./images/image0001.jpg)
 

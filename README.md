@@ -18,6 +18,9 @@ That's the power of the Azure container service and of a DC/OS cluster.
 
 This solution is built on 100% open source technologies.
 
+Be sure to see part 2 of this post here, where we actually run this service in an Azure hosted cluster.
+
+https://github.com/brunoterkaly/run-dcos-on-azure
 
 ### This post will demonstrate
 
@@ -35,7 +38,7 @@ Let's begin by showing you with a completed application that we will build this 
 
 The project is called SimpleRestfulService. You are seeing the completed version. We will run the project by right-mouse clicking in Project Explorer and choosing "Run on Server."
 
-Be sure to see part 2 of this post here:
+Be sure to see part 2 of this post here, where we actually run this service in an Azure hosted cluster.
 
 https://github.com/brunoterkaly/run-dcos-on-azure
 

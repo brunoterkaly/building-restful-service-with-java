@@ -10,6 +10,10 @@ Two types of clusters will be supported using the Azure container service. The f
 
 What is amazing about the technologies that we will be talking about is that we can create this restful service, and in a matter of minutes have that restful service running at scale across the cluster. 
 
+The ability to easily leverage a cluster that supports scaling, failure recovery and a significant degree of automation is one of the most significant breakthroughs in the IT landscape over the past couple years.
+
+Historically, this type of capability was available only to a select few experts. Thankfully for us, this technology has been democratized. I hope to prove how simple it is to build out a Web oriented application and easily scaling across a cluster of virtually any size.
+
 That's the power of the Azure container service and of a DC/OS cluster.
 
 This solution is built on 100% open source technologies.

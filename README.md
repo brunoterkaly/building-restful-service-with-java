@@ -6,7 +6,13 @@ The purpose of this post is to end up with a WAR file. This war file represents 
 
 We will build the restful application first, and then produce a war file. This war file will then be used in another blog post which will demonstrate how to containerize this restful application and scale across a cluster.
 
-Two types of clusters will be supported using the Azure container service. The first cluster will be a Mesosphere cluster, later followed up by a docker swarm cluster.
+Two types of clusters will be supported using the Azure container service. The first cluster will be a Mesosphere cluster, later followed up by a Docker Swarm cluster.
+
+What is amazing about the technologies that we will be talking about is that we can create this restful service, and in a matter of minutes have that restful service running at scale across the cluster. 
+
+That's the power of the Azure container service and of a DC/OS cluster.
+
+This solution is built on 100% open source technologies.
 
 
 ### This post will demonstrate

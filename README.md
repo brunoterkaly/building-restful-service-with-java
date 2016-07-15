@@ -35,6 +35,10 @@ Let's begin by showing you with a completed application that we will build this 
 
 The project is called SimpleRestfulService. You are seeing the completed version. We will run the project by right-mouse clicking in Project Explorer and choosing "Run on Server."
 
+Be sure to see part 2 of this post here:
+
+https://github.com/brunoterkaly/run-dcos-on-azure
+
 ![](./images/image0001.jpg)
 
 _Figure 1:  Running the Eclipse Project_

@@ -2,9 +2,9 @@
 
 ## Building a Restful Service using Jersey in Eclipse (Mars 4.2)
 
-The purpose of this post is to end up with a WAR file. This war file represents a Java application that supports a Restful queries.
+The purpose of this post is to end up with a WAR file. This war file represents a Java application that supports Restful queries.
 
-We will build this application first, and then produce a war file. This war file will then be used in another blog post which will demonstrate how to containerize this restful application and scale across a cluster.
+We will build the restful application first, and then produce a war file. This war file will then be used in another blog post which will demonstrate how to containerize this restful application and scale across a cluster.
 
 Two types of clusters will be supported using the Azure container service. The first cluster will be a Mesosphere cluster, later followed up by a docker swarm cluster.
 

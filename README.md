@@ -527,6 +527,6 @@ _Figure 32: Providing a name for the WAR file_
 ## Conclusion
 
 The goal for this post has been achieved – we now have a WAR file that we copied to a Docker-Tomcat image and run it as a container. This means that we will be able to run numerous restful services across our Mesosphere cluster.
-We will demonstrate 
+
 
 How to provision a Mesosphere cluster using the Azure container service, and how to package up and deploy our WAR file across the provisioned cluster.
